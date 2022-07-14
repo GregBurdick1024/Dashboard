@@ -1,0 +1,256 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 15% auto;
+    grid-template-rows: 200px auto;
+}
+
+/* sidebar stylings */
+
+
+.sidebar {
+    background-color: #1992D4;
+    color: #FFFFFF;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-rows: 150px 50px;
+    z-index: 10;
+
+}
+
+#logo {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    
+    
+}
+
+#logo-text {
+    align-self: center;
+}
+
+.sidebar-panel {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0 50px 0 5px; 
+
+}
+
+/* header stylings */
+
+.header {
+    background-color: #FFFFFF;
+    color: #000000;
+    grid-column-start: 2;
+    grid-column-end: auto;
+    grid-row-start: 1;
+    display: grid;
+    grid-template-columns: 70% auto;
+    grid-template-rows: 40% auto;
+    box-shadow: 0px 5px 15px #777676d8;
+}
+
+.searchbar-container {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: grid;
+    grid-template-columns: 50px auto;
+    padding-left: 50px;
+    
+    
+}
+
+.searchbar {
+    background-color: #E2E8F0;
+    width: 70%;
+    height: 35px;
+    border-radius: 25px;
+    align-self: center;
+}
+
+.account-container {
+    grid-column: 1;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 80px auto;
+    align-items: center;
+    padding-left: 50px;
+    
+}
+
+.avatar {
+    background-color: #FACC15;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.notifications-container {
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 100px 180px auto;
+    align-items: center;
+}
+
+.user-image {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #FACC15;
+    justify-self: end;
+    margin-right: 20px;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding-right: 35px;
+    margin-bottom: 30px;
+}
+
+
+.nav-button {
+    background-color: #1992D4;
+    border-style: none;
+    border-radius: 24px;
+    color: white;
+    padding: 10px 34px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* main content stylings */
+
+.main-content {
+    background-color: #E2E8F0;
+    z-index: -1;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 25% auto;
+    color: #000000;
+}
+
+.project-container {
+    grid-row-start: 1;
+    display: grid;
+    grid-template-columns: 47% 47%; 
+    grid-template-rows: 40px 270px 270px 270px ;
+    gap: 40px;
+    padding: 10px 0px 30px 40px;
+    
+}
+
+.project {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px #777676d8;
+    height: 100%;
+    border-left: #F0B429 solid 14px;
+    display: grid;
+    grid-template-rows: 80% 20%;
+}
+
+.project-text {
+    padding: 30px;
+}
+
+.title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: end;
+    padding: 0 30px 30px 0;
+}
+
+.right-container {
+    display: grid;
+    grid-template-rows: 45% 45%;
+    gap: 20px;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.announcement-container {
+    display: grid;
+    grid-template-rows: 40px auto;
+    gap: 30px;
+    padding-top: 10px;
+}
+
+.announcement {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    height: 100%;
+    width: auto;
+    margin-right: 40px;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    box-shadow: 0px 5px 15px #777676d8;
+
+}
+
+.trending-container {
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.trending {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    height: 100%;
+    width: auto;
+    margin-right: 40px;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    box-shadow: 0px 5px 15px #777676d8;
+
+}
+
+
+
+/* extra stylings */
+
+
+.main-icon {
+    width: 70px;
+    height: 70px;
+    align-self: center;
+    justify-self: center;
+}
+
+.icon {
+    width:30px;
+    height:30px;
+    align-self: center;
+    justify-self: center;
+}
+
+.project-icon {
+    width:30px;
+    height:30px;
+    align-self: center;
+    justify-self: center;
+    padding: 20px;
+}
+
+.text {
+    color: #636363;
+}
