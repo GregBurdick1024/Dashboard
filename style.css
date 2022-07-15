@@ -90,35 +90,57 @@ body {
     
 }
 
+#welcome {
+   margin-block-end: 0; 
+}
+
+#user-name {
+    margin-block-start: 0;
+}
+
 .avatar {
     background-color: #FACC15;
-    height: 70px;
-    width: 70px;
+    height: 80px;
+    aspect-ratio: 1;
     border-radius: 50%;
-    align-self: center;
+
+}
+
+.avatar-text {
+    margin-left: 10px;
 }
 
 .notifications-container {
     grid-row: 1;
     display: grid;
-    grid-template-columns: 100px 180px auto;
+    grid-template-columns: 30% 50%;
     align-items: center;
 }
 
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
 .user-image {
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    aspect-ratio: 1;
     border-radius: 50%;
     background-color: #FACC15;
-    justify-self: end;
-    margin-right: 20px;
+
+}
+
+.bell {
+   margin-left: 80px; 
 }
 
 .nav-buttons {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
-    padding-right: 35px;
+    margin-right: 80px;
     margin-bottom: 30px;
 }
 
@@ -150,7 +172,7 @@ body {
     grid-template-columns: 47% 47%; 
     grid-template-rows: 40px 270px 270px 270px ;
     gap: 40px;
-    padding: 10px 0px 30px 40px;
+    padding: 0px 0px 40px 40px;
     
 }
 
@@ -165,7 +187,7 @@ body {
 }
 
 .project-text {
-    padding: 30px;
+    padding: 0px 30px;
 }
 
 .title {
@@ -181,8 +203,8 @@ body {
 
 .right-container {
     display: grid;
-    grid-template-rows: 45% 45%;
-    gap: 20px;
+    grid-template-rows: 40px 38% 40px 38%;
+    gap: 40px;
     grid-column-start: 2;
     grid-row-start: 1;
     grid-row-end: 3;
@@ -192,35 +214,35 @@ body {
     display: grid;
     grid-template-rows: 40px auto;
     gap: 30px;
-    padding-top: 10px;
-}
-
-.announcement {
     background-color: #FFFFFF;
     border-radius: 12px;
     height: 100%;
     width: auto;
     margin-right: 40px;
     grid-row-start: 2;
-    grid-row-end: 2;
+    grid-row-end: 3;
     box-shadow: 0px 5px 15px #777676d8;
+}
+
+.announcement {
+   
 
 }
 
 .trending-container {
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
-.trending {
+    grid-row-start: 4;
+    grid-row-end: 4;
     background-color: #FFFFFF;
     border-radius: 12px;
     height: 100%;
     width: auto;
     margin-right: 40px;
-    grid-row-start: 2;
-    grid-row-end: 2;
+    grid-row-start: 4;
     box-shadow: 0px 5px 15px #777676d8;
+}
+
+.trending {
+    
 
 }
 
